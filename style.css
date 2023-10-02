@@ -269,6 +269,57 @@ form btn2{
 }
 
 /* ----------   css for mobile ------- */
+/* ----------   css for mobile ------- */
 @media only screen and (max-width: 600px) {
-    
+    body {
+        font-size: 14px; /* Adjust the font size for better readability on small screens */
+    }
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+    .logo {
+        width: 150px; /* Reduce the logo size for better fit on mobile */
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between; /* Align navigation items with space between */
+        padding: 10px 0; /* Add some padding between navigation items */
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0; /* Add margin between each navigation item */
+    }
+    .header-text {
+        margin-top: 10%; /* Reduce the header-text margin for mobile */
+        text-align: center; /* Center-align the text on mobile */
+    }
+    .header-text h1 {
+        font-size: 40px; /* Reduce the font size of the header text for mobile */
+    }
+    .tab-titles {
+        flex-direction: column; /* Stack tab links vertically */
+        margin: 20px 0; /* Add some margin between tab links */
+    }
+    .tab-links {
+        margin-right: 0; /* Remove margin right from tab links on mobile */
+        margin-bottom: 10px; /* Add margin bottom to separate tab links */
+    }
+    .tab-links::after {
+        bottom: -4px; /* Adjust the position of the underline */
+    }
+    .about-col-1,
+    .about-col-2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%; /* Make the columns take full width on mobile */
+    }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid items for mobile */
+    }
+    .layer {
+        height: auto; /* Allow the layer to expand naturally on mobile */
+    }
+    .contact-right form btn2 {
+        padding: 14px 30px; /* Reduce the button padding for mobile */
+    }
 }
