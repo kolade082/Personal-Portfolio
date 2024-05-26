@@ -32,85 +32,81 @@
     </div>
 
     <!-- ABOUT -->
-    <div id="about">
+    <section id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/about.png">
-                </div>
-                <div class="about-col-2 ">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Kolade is an ambitious software engineer who is predicted to earn a first-class degree in BSc
-                        Computing (Software Engineering). He is a diligent developer, constantly seeking opportunities
-                        to expand his knowledge and skills, not only in the realm of technology but in all areas. Kolade
-                        firmly believes that his positive attitude towards work and his diverse skillset can greatly
-                        contribute to team success and deliver exceptional results.</p>
+            <div class="about-content">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a dedicated and innovative Computing student at the University of Northampton, anticipating a
+                    first-class degree in Software Engineering. I have demonstrated a strong aptitude for backend and
+                    full-stack development through impactful projects like the NHS patient portal and the JPMorgan Chase
+                    & Co. Code for Good challenge. Recognized for technical excellence and collaborative skills, I've
+                    received accolades for both technical solutions and teamwork. With a foundation in diverse
+                    programming languages and frameworks (including Java, JavaScript, PHP, React, and Node.js), my focus
+                    lies in developing efficient and user-friendly software solutions. Keen on furthering my expertise
+                    in software engineering, I am looking for opportunities to apply my skills in a dynamic and
+                    innovative environment. My passion for technology is complemented by my interests in board games,
+                    sports, and outdoor activities, which fuel my creative and strategic thinking.</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br>Website Development</li>
-                            <li><span>App Development</span><br>Building Android Apps</li>
-                            <li><span>Software Development</span>
-                            <li><span>Java</span>
-                            <li><span>JavaScript</span>
-                            <li><span>SQL</span>
-                            <li><span>PHP</span>
-                            <li><span>Python</span>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Barclaycard</span><br>Software Engineer</li>
-                            <li><span>The Access Group</span><br>Backend Developer</li>
-                            <li><span>University of Northampton</span><br>Software Engineer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>University of Northampton (2021 - Current)</span><br>Software Engineering</li>
-                            <li><span>University of Northampton International College (2020 - 2021)</span><br>Computing
-                                Pathway</li>
-                            <li><span>Afe Babalola University (2019 - 2020)</span><br>Electrical Electronics</li>
-                            <li><span>Deeper Life High School</span><br>WAEC certificate</li>
-                        </ul>
-                    </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Website Development</li>
+                        <li><span>App Development</span><br>Building Android Apps</li>
+                        <li><span>Software Development</span></li>
+                        <li><span>Java</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>SQL</span></li>
+                        <li><span>PHP</span></li>
+                        <li><span>Python</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Barclaycard</span><br>Software Engineer</li>
+                        <li><span>The Access Group</span><br>Backend Developer</li>
+                        <li><span>University of Northampton</span><br>Software Engineer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Northampton (2021 - Current)</span><br>Software Engineering</li>
+                        <li><span>University of Northampton International College (2020 - 2021)</span><br>Computing
+                            Pathway</li>
+                        <li><span>Afe Babalola University (2019 - 2020)</span><br>Electrical Electronics</li>
+                        <li><span>Deeper Life High School</span><br>WAEC certificate</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <!-- PORRFOLIO -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="images/wuc.png">
+                <div class="work" onclick="showImage('images/wuc.png')">
+                    <img src="images/wuc.png" alt="Woodlands University Website">
                     <div class="layer">
                         <h3>Website</h3>
                         <p>Woodlands University Website</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/auction.png">
+                <div class="work" onclick="showImage('images/auction.png')">
+                    <img src="images/auction.png" alt="Auction Website">
                     <div class="layer">
                         <h3>Website</h3>
                         <p>Website used for making auctions</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/ecommerce.png">
+                <div class="work" onclick="showImage('images/ecommerce.png')">
+                    <img src="images/ecommerce.png" alt="E-commerce Application">
                     <div class="layer">
                         <h3>Mobile App</h3>
                         <p>E-commerce Application</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -127,15 +123,14 @@
                     <p><i class="fas fa-paper-plane"></i>koladeoluwadara@gmail.com</p>
                     <p><i class="fas fa-phone-square"></i>07572887155</p>
                     <div class="social-icons">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter-square"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/kolade-oluwadara-87563a245/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/kolade082"><i class="fab fa-github"></i></a>
                     </div>
-                    <a href="images/Kolade's CV '23.doc" download class="btn btn2">Download CV</a>
+                    <a href="images/Kolade Dara CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form id="contact-form" action="https://formspree.io/f/xeqywvez" method="POST">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -146,6 +141,20 @@
         </div>
         <div class="copyright">
             <p>Copyright &copy; 2023 Kolade.</p>
+        </div>
+    </div>
+    <!-- Full-Size Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Pop-up Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMessageModal()">&times;</span>
+            <p id="messageText"></p>
         </div>
     </div>
     <script src="script.js"></script>
